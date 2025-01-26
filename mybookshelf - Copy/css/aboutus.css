@@ -1,0 +1,43 @@
+body {
+    background: radial-gradient(circle, #f9f6f1, #f1ece5);
+}
+.jumbotron {
+    font-family:"Abril Fatface", serif; /* Replace with your desired font */
+    background: radial-gradient(circle, #f9f6f1, #f1ece5);
+    color: #333; /* Text color */
+    padding: 70px 100px 100px 100px;
+    gap: 20px;
+}
+
+.jumbotron .display-4 {
+    margin-bottom: 13px;
+    color:#596942 ;
+}
+
+/* Change button color */
+.jumbotron .btn-primary {
+    background-color: #DA8359!important; /* New button background color */
+    border-color: #d07d54!important;
+    margin-top: 25px;
+}
+
+.jumbotron .lead, p {
+    font-family:"Amarante", serif;   
+}
+
+.jumbotron .btn-primary:hover {
+    background-color: #cf7d54!important; /* Button hover color */
+    border-color: #c2724a!important;
+}
+
+.jumbotron .btn-primary:active {
+    background-color: #c0714a!important; /* Color during the click */
+    outline:#8a4e30!important; /* Removes the default focus outline */
+
+}
+
+/* Focus state (after the button is clicked) */
+.jumbotron .btn-primary:focus {
+    background-color: #cb7b54!important; /* Persistent color after click */
+    box-shadow: 0 0 0 0.2rem rgba(214, 112, 61, 0.5) !important; /* Custom focus ring */
+}

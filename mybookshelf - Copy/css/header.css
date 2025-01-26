@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Amarante&display=swap');
+
+body {
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+.my-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.my-header a {
+    text-decoration: none; 
+}
+
+.my-header .top {
+    padding: 15px 27px 15px 27px;
+    background-image: url(../assets/imageedit_2_7552938573.png);
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 30px rgba(0, 0, 0, 0.2);
+}
+
+.my-header h1 {
+    font-size: 50px;
+    font-family: "Abril Fatface", serif;
+    font-style: normal;
+    color: #FCFAEE;
+    text-shadow: 2.5px 2.5px 3px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-header .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 6px;
+}
+
+.my-header .left img {
+    border-radius: 50px;
+    box-shadow: 2.5px 2.5px 3px rgba(0, 0, 0, 0.1);
+}
+
+
+.my-header .left p {
+    font-family: "Amarante", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #FCFAEE;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+
+}
+
+.my-header .right p {
+    background-color: #DA8359;
+    padding: 17px 30px 17px 30px;
+    font-family: "Amarante", serif;
+    font-weight: 1000;
+    font-style: normal;
+    color: #FCFAEE;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    box-shadow: 2.5px 2.5px 3px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.my-header .right p:hover {
+    background-color: #c47550;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.my-header nav {
+    background-image: url(../assets/imageedit_4_7919377911.png);
+    padding: 12px 10px 15px 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.my-header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 85px;
+    font-family: "Amarante", serif;
+    font-weight: 100;
+    font-style: normal;
+    color: #FCFAEE;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+}
+
+.my-header nav ul a {
+    text-decoration: none;
+    font-family: "Amarante", serif;
+    font-weight: 100;
+    font-style: normal;
+    color: #FCFAEE;
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+
+    .my-header .top {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+        gap: 15px;
+    }
+
+    .my-header h1 {
+        font-size: 40px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .my-header .left {
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .my-header .left img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .my-header .left p {
+        font-size: 16px;
+    }
+
+    .my-header .right p {
+        font-size: 18px;
+        padding: 13px 22px;
+    }
+
+    .my-header nav ul {
+        gap: 50px;
+    }
+
+    .my-header nav ul a {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .my-header .top {
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+    }
+
+    .my-header h1 {
+        font-size: 30px;
+    }
+
+    .my-header .left {
+        align-items: center;
+        gap: 10px;
+    }
+
+    .my-header .left img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .my-header .left p {
+        font-size: 14px;
+    }
+
+    .my-header .right p {
+        font-size: 12px;
+        padding: 10px 20px;
+    }
+
+    .my-header nav ul {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .my-header nav ul a {
+        font-size: 14px;
+    }
+}

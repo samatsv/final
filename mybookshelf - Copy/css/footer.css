@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Amarante&family=Concert+One&family=Pirata+One&family=Quicksand:wght@300..700&display=swap');
+
+#my-footer {
+    background-image: url(../assets/imageedit_2_7552938573.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Amarante", serif;
+    font-weight: 100;
+    font-style: normal;
+    color: rgb(255, 253, 250);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
+    padding: 20px 27px 20px 27px;
+    text-align: center;
+}
+
+
+
+
+@media (max-width: 600px) {
+    #my-footer p{
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Amarante&display=swap');
+
+body {
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+#my-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#my-header .top {
+    padding: 7px 27px 7px 27px;
+    background-image: url(../assets/imageedit_2_7552938573.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 3px 30px rgba(0, 0, 0, 0.2);
+    padding: 23px;
+}
+
+#my-header  h1 {
+    font-size: 50px;
+    font-family: "Abril Fatface", serif;
+    font-style: normal;
+    color: #FCFAEE;
+    text-shadow: 2.5px 2.5px 3px rgba(0, 0, 0, 0.1);
+}
+
+#my-header nav {
+    background-image: url(../assets/imageedit_4_7919377911.png);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#my-header nav {
+    font-family: "Amarante", serif;
+    font-weight: 100;
+    font-style: normal;
+    color: #FCFAEE;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    font-weight: 500;
+}
+
+#my-header nav .left {
+    display: flex;
+    justify-content: flex-start;
+    gap: 60px;
+    padding: 15px 25px 15px 30px;
+}
+
+#my-header nav .right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+    padding: 15px 25px 15px 30px;
+}
+
+#my-header nav .right li {
+    background-color: #DA8359;
+    padding: 15px 25px 15px 25px;
+    font-family: "Amarante", serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #FCFAEE;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    box-shadow: 2.5px 2.5px 3px rgba(0, 0, 0, 0.1);
+}
+
+#my-header nav .right li:hover {
+    background-color: #c47550;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+#my-header nav a {
+    text-decoration: none;
+    color: #FCFAEE;
+}
+
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    #my-header .top1 {
+        padding: 15px;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    #my-header .websitetitle {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    #my-header nav {
+        flex-direction: row;
+        padding: 10px;
+    }
+
+    #my-header nav .left,
+    #my-header nav .right {
+        justify-content: center;
+        gap: 20px;
+        padding: 10px 15px;
+    }
+
+    #my-header nav .right li {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    #my-header .top1 {
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
+    }
+
+    #my-header .websitetitle {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    #my-header nav {
+        flex-direction: row;
+        gap: 15px;
+        padding: 10px;
+    }
+
+    #my-header nav .left,
+    #my-header nav .right {
+        flex-direction: row;
+        gap: 10px;
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+
+    #my-header nav .right li {
+        padding: 8px 15px;
+        text-align: center;
+    }
+}
